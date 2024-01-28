@@ -6,15 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PokelistComponent } from './pokelist/pokelist.component';
 import { PokemonservService } from './pokemon-service.service.js';
-import { PokeDetailComponent } from './poke-detail/poke-detail.component';
+import { PokedetailComponent } from './poke-detail/poke-detail.component.js';
 import { PokeTypeColorPipe } from './pipe/poke-type-color.pipe';
 
 @NgModule({
   declarations: [
     AppComponent,
     PokelistComponent,
-    PokeDetailComponent,
     PokeTypeColorPipe,
+    PokedetailComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [PokemonservService],
