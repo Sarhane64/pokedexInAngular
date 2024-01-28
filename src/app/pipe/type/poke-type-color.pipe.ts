@@ -9,58 +9,58 @@ export class PokeTypeColorPipe implements PipeTransform {
 
     switch (type) {
       case 'normal':
-        color = '#AAA67F';
+        color = '#ff5733';
         break;
       case 'fighting':
-        color = '#C12239';
+        color = '#33a1fd';
         break;
       case 'flying':
-        color = '#A891EC';
+        color = '#a74dff';
         break;
       case 'ground':
-        color = '#DEC16B';
+        color = '#ffc107';
         break;
       case 'poison':
-        color = '#A43E9E';
+        color = '#ff66b2';
         break;
       case 'rock':
-        color = '#B69E31';
+        color = '#8b4513';
         break;
       case 'bug':
-        color = '#A7B723';
+        color = '#7fff00';
         break;
       case 'ghost':
-        color = '#70559B';
+        color = '#4b0082';
         break;
       case 'steel':
-        color = '#B7B9D0';
+        color = '#c0c0c0';
         break;
       case 'fire':
-        color = '#F57D31';
+        color = '#ff4500';
         break;
       case 'water':
-        color = '#6493EB';
+        color = '#1e90ff';
         break;
       case 'grass':
-        color = '#74CB48';
+        color = '#32cd32';
         break;
       case 'electric':
-        color = '#F9CF30';
+        color = '#ffff00';
         break;
       case 'psychic':
-        color = '#FB5584';
+        color = '#ff1493';
         break;
       case 'ice':
-        color = '#9AD6DF';
+        color = '#add8e6';
         break;
       case 'dragon':
-        color = '#7037FF';
+        color = '#800080';
         break;
       case 'dark':
-        color = '#75574C';
+        color = '#2f4f4f';
         break;
       case 'fairy':
-        color = '#E69EAC';
+        color = '#ff69b4';
         break;
       default:
         color = '#9E9E9E';

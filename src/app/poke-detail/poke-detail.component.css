@@ -1,0 +1,48 @@
+.topPokemonContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.statsbarContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sectionstatContainer {
+  margin: 10rem 7rem;
+}
+
+.first-p {
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.contentPokemonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: end;
+  margin-right: 5px;
+  color: whitesmoke;
+  h1::first-letter {
+    text-transform: uppercase;
+  }
+}
+
+.headerContainerInfos {
+  display: flex;
+  justify-content: space-between;
+  width: 520px;
+  font-size: 1.4rem;
+  height: 35px;
+  p {
+    font-weight: bold;
+    font-style: italic;
+  }
+}
+
+.imgContainerdetail {
+  padding-left: 250px;
+}

@@ -1,4 +1,4 @@
-import { PokeTypeColorPipe } from './poke-type-color.pipe';
+import { PokeTypeColorPipe } from '../type/poke-type-color.pipe.js';
 
 describe('PokeTypeColorPipe', () => {
   it('create an instance', () => {

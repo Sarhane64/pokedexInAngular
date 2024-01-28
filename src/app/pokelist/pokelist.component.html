@@ -10,7 +10,7 @@
         <a [routerLink]="['/pokemon', pokemon.id]">
           <div
             class="test"
-            [style.background]="pokemon.types[0].type.name | pokeTypeColor"
+            [style.background]="pokemon.types[0].type.name | BackgroundtypePipe"
           >
             <h2 class="tets">{{ pokemon.name }}</h2>
 

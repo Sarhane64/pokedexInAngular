@@ -1,5 +1,5 @@
 <section
-  style="background: #ef5350; height: 100vh"
+  [style.background]="pokemonList.types[0].type.name | BackgroundtypePipe"
   class="pokemonDetailContainer"
 >
   <a [routerLink]="['/pokemon']">

@@ -7,7 +7,9 @@ import { AppComponent } from './app.component';
 import { PokelistComponent } from './pokelist/pokelist.component';
 import { PokemonservService } from './pokemon-service.service.js';
 import { PokedetailComponent } from './poke-detail/poke-detail.component.js';
-import { PokeTypeColorPipe } from './pipe/poke-type-color.pipe';
+
+import { PokeTypeColorPipe } from './pipe/type/poke-type-color.pipe.js';
+import { BackgroundtypePipe } from './pipe/typeBackground/backgroundtype.pipe';
 
 @NgModule({
   declarations: [
@@ -15,6 +17,7 @@ import { PokeTypeColorPipe } from './pipe/poke-type-color.pipe';
     PokelistComponent,
     PokeTypeColorPipe,
     PokedetailComponent,
+    BackgroundtypePipe,
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [PokemonservService],

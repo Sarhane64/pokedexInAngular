@@ -1,0 +1,18 @@
+a {
+  text-decoration: none;
+  color: black;
+  text-transform: none;
+}
+
+.containerImage {
+  display: flex;
+  justify-content: flex-end;
+  img {
+    margin-right: 30px;
+  }
+}
+
+.containerAtributpokemon {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
