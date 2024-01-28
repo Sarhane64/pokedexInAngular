@@ -1,1 +1,69 @@
-<p>poke-detail works!</p>
+<section
+  style="background: #ef5350; height: 100vh"
+  class="pokemonDetailContainer"
+>
+  <a [routerLink]="['/pokemon']">
+    <button>retour</button>
+  </a>
+  <section class="containerheader">
+    <div class="topPokemonContainer">
+      <div class="contentPokemonContainer">
+        <h1 style="font-weight: 700; font-size: 100px">
+          {{ pokemonList.name }}
+        </h1>
+        <div class="headerContainerInfos">
+          <p class="first-p">Height</p>
+          <p>{{ pokemonList.weight }}</p>
+        </div>
+        <div class="headerContainerInfos">
+          <p class="first-p">Weigth</p>
+          <p>{{ pokemonList.height }}</p>
+        </div>
+        <div class="headerContainerInfos">
+          <p class="first-p">Abilities</p>
+          <div *ngIf="pokemonList.abilities.length > 0">
+            <p>{{ pokemonList.abilities[0].ability.name }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="imgContainerdetail">
+        <img
+          style="width: 400px"
+          src="{{ pokemonList.sprites.other.dream_world.front_default }}"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="sectionstatContainer">
+    <div
+      class="pokemonListContainer"
+      *ngFor="let stat of pokemonList.stats; let i = index"
+    >
+      <div style="color: white" class="statsbarContainer">
+        <span style="font-size: large; margin-left: 55px; width: 125px">{{
+          stat.stat.name
+        }}</span>
+        <div class="progress" style="width: 30%; height: 25px">
+          <div
+            style="background: #b71c1c"
+            class="progress-bar"
+            role="progressbar"
+            [style.width]="calculate(stat.base_stat) + '%'"
+            aria-valuemin="0"
+            aria-valuemax="100"
+          ></div>
+        </div>
+        <span
+          style="
+            margin-right: 20px;
+            font-size: large;
+            padding: 20px 10px;
+            width: 35px;
+          "
+          >{{ stat.base_stat }}
+        </span>
+      </div>
+    </div>
+  </section>
+</section>
