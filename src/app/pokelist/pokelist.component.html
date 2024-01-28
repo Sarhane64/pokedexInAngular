@@ -1,1 +1,41 @@
-<p>pokelist works!</p>
+<div style="background: #313398">
+  <h1>Pokedex</h1>
+  <div class="container" style="max-width: 1700px">
+    <section class="row justify-content-around">
+      <div
+        style="margin-top: 25px"
+        class="col-4"
+        *ngFor="let pokemon of pokemonDetails"
+      >
+        <a [routerLink]="['/pokemon', pokemon.id]">
+          <div
+            class="test"
+            [style.background]="pokemon.types[0].type.name | pokeTypeColor"
+          >
+            <h2 class="tets">{{ pokemon.name }}</h2>
+
+            <!-- Your existing template code -->
+            <div class="containerAtributpokemon">
+              <div>
+                <div
+                  style="width: 50px"
+                  [style.background]="
+                    pokemon.types[0].type.name | pokeTypeColor
+                  "
+                >
+                  {{ pokemon.types[0].type.name }}
+                </div>
+              </div>
+              <div class="containerImage">
+                <img
+                  style="width: 150px; height: 150px"
+                  src="{{ pokemon.sprites.other.dream_world.front_default }}"
+                />
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
