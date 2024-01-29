@@ -44,9 +44,9 @@
 }
 
 .imgContainerdetail {
-  padding-left: 250px;
+  padding-left: 0 250px;
 }
 .pokemonDetailContainer {
-  padding: 250px 200px;
+  padding: 0px 200px;
   height: 100vh;
 }
