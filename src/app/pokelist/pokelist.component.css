@@ -37,7 +37,7 @@ a {
 .typeContainerCard {
   margin-top: 1rem;
   width: 105px;
-  height: 30px;
+  height: 40px;
   align-items: start;
   font-size: 24px;
   color: #fff;
@@ -46,4 +46,9 @@ a {
   justify-content: center;
   align-items: center;
   display: flex;
+}
+@media screen and (min-width: 900px) {
+  article {
+    padding: 1rem 3rem;
+  }
 }

@@ -1,6 +1,6 @@
 .topPokemonContainer {
-  display: grid;
-  grid-template-columns: 50% 50%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .statsbarContainer {

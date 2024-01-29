@@ -1,4 +1,4 @@
-<div style="background: #313398">
+<div style="background: #293744">
   <div style="display: flex; justify-content: center; align-items: center">
     <span
       ><img
@@ -21,13 +21,15 @@
           >
             <h2 class="title">{{ pokemon.name }}</h2>
             <div class="containerAtributpokemon">
-              <div
-                class="typeContainerCard"
-                style="border-radius: 15px"
-                [style.background]="pokemon.type.name | pokeTypeColor"
-                *ngFor="let pokemon of pokemon.types"
-              >
-                {{ pokemon.type.name }}
+              <div class="buttonContainer">
+                <button
+                  class="typeContainerCard"
+                  style="border-radius: 15px; border: none"
+                  [style.background]="pokemon.type.name | pokeTypeColor"
+                  *ngFor="let pokemon of pokemon.types"
+                >
+                  {{ pokemon.type.name }}
+                </button>
               </div>
 
               <div class="containerImage">
