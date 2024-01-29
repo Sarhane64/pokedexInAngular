@@ -10,7 +10,7 @@
 }
 
 .sectionstatContainer {
-  margin: 10rem 7rem;
+  margin: 5rem 0;
 }
 
 .first-p {
@@ -45,4 +45,8 @@
 
 .imgContainerdetail {
   padding-left: 250px;
+}
+.pokemonDetailContainer {
+  padding: 250px 200px;
+  height: 100vh;
 }

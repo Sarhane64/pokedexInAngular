@@ -5,10 +5,11 @@
   <a [routerLink]="['/pokemon']">
     <button>retour</button>
   </a>
+
   <section class="containerheader">
     <div class="topPokemonContainer">
       <div class="contentPokemonContainer">
-        <h1 style="font-weight: 700; font-size: 100px">
+        <h1 style="font-weight: 700; font-size: 122px">
           {{ pokemonList.name }}
         </h1>
         <div class="headerContainerInfos">
@@ -28,7 +29,7 @@
       </div>
       <div class="imgContainerdetail">
         <img
-          style="width: 400px"
+          style="width: 350px"
           src="{{ pokemonList.sprites.other.dream_world.front_default }}"
         />
       </div>
@@ -41,12 +42,23 @@
       *ngFor="let stat of pokemonList.stats; let i = index"
     >
       <div style="color: white" class="statsbarContainer">
-        <span style="font-size: large; margin-left: 55px; width: 125px">{{
-          stat.stat.name
-        }}</span>
-        <div class="progress" style="width: 30%; height: 25px">
+        <span
+          style="
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-right: 5px;
+            width: 185px;
+          "
+          >{{ stat.stat.name }}</span
+        >
+        <div class="progress" style="width: 75%; height: 25px">
           <div
-            style="background: #b71c1c"
+            style="
+              color: black;
+              background: #ffe436;
+              border: 1px solid rgb(169, 164, 164);
+            "
             class="progress-bar"
             role="progressbar"
             [style.width]="calculate(stat.base_stat) + '%'"
@@ -56,8 +68,8 @@
         </div>
         <span
           style="
-            margin-right: 20px;
-            font-size: large;
+            margin-left: 20px;
+            font-size: 1.4rem;
             padding: 20px 10px;
             width: 35px;
           "

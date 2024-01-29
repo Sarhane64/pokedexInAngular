@@ -9,12 +9,10 @@
       >
         <a [routerLink]="['/pokemon', pokemon.id]">
           <div
-            class="test"
+            class="imgContainer"
             [style.background]="pokemon.types[0].type.name | BackgroundtypePipe"
           >
-            <h2 class="tets">{{ pokemon.name }}</h2>
-
-            <!-- Your existing template code -->
+            <h2 class="title">{{ pokemon.name }}</h2>
             <div class="containerAtributpokemon">
               <div>
                 <div
