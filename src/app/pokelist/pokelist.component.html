@@ -14,19 +14,18 @@
           >
             <h2 class="title">{{ pokemon.name }}</h2>
             <div class="containerAtributpokemon">
-              <div>
-                <div
-                  style="width: 50px"
-                  [style.background]="
-                    pokemon.types[0].type.name | pokeTypeColor
-                  "
-                >
-                  {{ pokemon.types[0].type.name }}
-                </div>
+              <div
+                class="typeContainerCard"
+                style="border-radius: 15px"
+                [style.background]="pokemon.type.name | pokeTypeColor"
+                *ngFor="let pokemon of pokemon.types"
+              >
+                {{ pokemon.type.name }}
               </div>
+
               <div class="containerImage">
                 <img
-                  style="width: 150px; height: 150px"
+                  style="width: 150px; height: 150px; margin-bottom: 15px"
                   src="{{ pokemon.sprites.other.dream_world.front_default }}"
                 />
               </div>
