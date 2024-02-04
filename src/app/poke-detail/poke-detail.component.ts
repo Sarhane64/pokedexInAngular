@@ -25,7 +25,7 @@ export class PokedetailComponent implements OnInit {
 
   calculate(test: number | null): number {
     if (test !== null) {
-      return (test * 100) / 120;
+      return (test * 100) / 110;
     } else {
       return 0;
     }
@@ -40,11 +40,10 @@ export class PokedetailComponent implements OnInit {
     pokemon.subscribe({
       next: (res: Pokeinterface) => {
         this.pokemonList = res;
-        console.log(this.pokemonList);
       },
       error: (error: any) => {
         this.apiError = true;
-        console.log(error);
+        console.error(error);
       },
     });
   }

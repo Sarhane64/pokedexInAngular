@@ -18,7 +18,6 @@ export class PokelistComponent implements OnInit {
     this.PokemonservService.getPokemon().subscribe({
       next: (data) => {
         this.pokemon = data.results;
-        console.log(this.pokemon);
         this.fetchPokemonDetails();
       },
       error: (error) => {
@@ -32,7 +31,6 @@ export class PokelistComponent implements OnInit {
       this.PokemonservService.getAllInfo(poke.url).subscribe({
         next: (details) => {
           this.pokemonDetails.push(details);
-          console.log(details);
         },
         error: (error) => {
           console.error('Error fetching Pokemon details:', error);
